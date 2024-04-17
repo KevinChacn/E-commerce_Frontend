@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+/* Estilos para el header */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+body {
+    overflow-y: auto; /* Habilita el scroll vertical */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ddd;
+}
+
+
+/* Estilos Main */
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Color de fondo sutil */
+    padding: 2px;
+}
+
+.card-container {
+    margin: 100px; /* Espacio entre las tarjetas */
+}
+.card {
+    max-width: 1000px; /* Establece el ancho máximo de las tarjetas */
+    max-height: 600px;
+    margin: 0 auto; /* Centra las tarjetas horizontalmente */
+    margin-bottom: 20px; /* Agrega un espacio entre las tarjetas */
+    border: 1px solid #ccc; /* Agrega un borde a las tarjetas */
+    border-radius: 10px; /* Agrega bordes redondeados a las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra a las tarjetas */
+    padding: 20px; /* Agrega espacio interno a las tarjetas */
+    overflow-y: auto;
+}
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #000000;
+    border-top: 1px solid #000000;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff; /* Color del texto */
+}
+
+footer img {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
