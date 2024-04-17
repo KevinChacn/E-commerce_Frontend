@@ -1,13 +1,162 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-  <meta charset="utf-8">
-  <title>ECommerceFrontend</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba Técnica</title>
+
+  <!-- CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- JS de Bootstrap (opcional, para funcionalidades como dropdowns, modals, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-  <app-root></app-root>
+  <!-- Cabecera -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="../assets/logo_empresa.png" alt="Logo de la empresa">
+        <span class="company-name">Mi tienda!</span>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Gestion de Productos</a></li>
+        <li><a href="#">Gestión de Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body overflow-auto"> <!-- Agregar clase overflow-auto -->
+            <h3 class="card-title">Gestión de Productos</h3>
+            <div class="section">
+              <h6>Crear producto</h6><br>
+              <form class="mx-auto">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name" placeholder="Ingrese el nombre" required>
+                </div>
+                <div class="mb-3">
+                  <label for="category" class="form-label">Categoría</label>
+                  <input type="text" class="form-control" id="category" placeholder="Ingrese la categoría" required>
+                </div>
+                <div class="mb-3">
+                  <label for="price" class="form-label">Precio</label>
+                  <input type="number" class="form-control" id="price" placeholder="Ingrese el precio" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+            <div class="section">
+              <h6>Visualizar productos</h6>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Categoría</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Producto 1</td>
+                      <td>Categoría 1</td>
+                      <td>$100</td>
+                    </tr>
+                    <tr>
+                      <td>Producto 2</td>
+                      <td>Categoría 2</td>
+                      <td>$200</td>
+                    </tr>
+                    <!-- Agrega más filas para más productos -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body overflow-auto"> <!-- Agregar clase overflow-auto -->
+            <h3 class="card-title">Gestión de Pedidos</h3>
+            <div class="section">
+              <h6>Crear pedido</h6>
+              <form class="mx-auto">
+                <div class="mb-3">
+                  <label for="customerName" class="form-label">Nombre del Cliente</label>
+                  <input type="text" class="form-control" id="customerName" placeholder="Ingrese el nombre" required>
+                </div>
+                <div class="mb-3">
+                  <label for="customerAddress" class="form-label">Dirección del Cliente</label>
+                  <input type="text" class="form-control" id="customerAddress" placeholder="Ingrese la dirección"
+                    required>
+                </div>
+                <div class="mb-3">
+                  <label for="productId" class="form-label">ID del Producto</label>
+                  <input type="text" class="form-control" id="productId" placeholder="Ingrese el ID del producto"
+                    required>
+                </div>
+                <div class="mb-3">
+                  <label for="quantity" class="form-label">Cantidad</label>
+                  <input type="number" class="form-control" id="quantity" placeholder="Ingrese la cantidad" required>
+                </div>
+                <div class="mb-3">
+                  <label for="totalPrice" class="form-label">Precio Total</label>
+                  <input type="number" class="form-control" id="totalPrice" placeholder="Ingrese el precio total"
+                    required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button><br><br>
+              </form>
+            </div>
+            <div class="section">
+              <h6>Visualizar pedidos</h6>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nombre del Cliente</th>
+                      <th scope="col">Dirección del Cliente</th>
+                      <th scope="col">ID del Producto</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Precio Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Test</td>
+                      <td>Test</td>
+                      <td>661b0f98402e044f3cac02f4</td>
+                      <td>10</td>
+                      <td>310</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Pie de página -->
+  <footer>
+    <p>
+      <img src="../assets/logo_empresa.png" alt="Logo de la empresa">
+      Derechos reservados &copy; 2024 Mi tienda!
+    </p>
+  </footer>
 </body>
+
 </html>

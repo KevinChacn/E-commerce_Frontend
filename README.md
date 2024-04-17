@@ -18,7 +18,7 @@ Ejecute `ng build` para construir el proyecto. Los artefactos de compilación se
 
 ## Elecciones:
 
-- Elegí Angular sobre Skelvit debido a mi familiaridad y experiencia previa con el framework. Aunque consideré Skelvit y Tailwind CSS, mi limitado tiempo y la necesidad de avanzar rápidamente en el proyecto me llevaron a optar por las herramientas en las que tenía más fortalezas y conocimientos.
+- Elegí Angular sobre SvelteKit debido a mi familiaridad y experiencia previa con el framework. Aunque consideré SvelteKit y Tailwind CSS, mi limitado tiempo y la necesidad de avanzar rápidamente en el proyecto me llevaron a optar por las herramientas en las que tenía más fortalezas y conocimientos.
 
 - Debido a restricciones de tiempo, no pude completar el proyecto en su totalidad. Sin embargo, mi principal objetivo fue demostrar mi comprensión y conocimiento de las tecnologías y conceptos relevantes, en lugar de completar todos los requisitos del proyecto. Agradezco la oportunidad de participar en esta prueba y estoy dispuesto/a a abordar cualquier pregunta o comentario sobre mi trabajo.
 
